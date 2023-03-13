@@ -56,7 +56,7 @@ public class HW3 {
 		String fileName;
 		int wordNum;
 
-		System.out.print("ÆÄÀÏ ÀÌ¸§, ´Ü¾î ½ÖÀÇ ¼ö? ");
+		System.out.print("íŒŒì¼ ì´ë¦„, ë‹¨ì–´ ìŒì˜ ìˆ˜? ");
 		String filenameWordNum = new Scanner(System.in).nextLine();
 		System.out.println();
 
@@ -124,7 +124,7 @@ public class HW3 {
 		frequencyQueue.poll();
 		for (int i = 0; i < wordNum + 1; i++)
 			tempArray.add(frequencyQueue.poll());
-		System.out.print("Tok-k ¹®ÀÚ¿­:");
+		System.out.print("Tok-k ë¬¸ìì—´:");
 		for (int i = wordNum - 1; i >= 0; i--)
 			System.out.print(" " + tempArray.get(i).toString());
 	}
