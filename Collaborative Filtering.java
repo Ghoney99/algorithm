@@ -80,7 +80,7 @@ public class HW2 {
 		int itemnum;
 		TreeSet<Integer> itemtree = new TreeSet<>();
 
-		System.out.print("ÆÄÀÏ ÀÌ¸§, »ç¿ëÀÚ ÀÌ¸§, »ç¿ëÀÚ ¼ö, Ç×¸ñ ¼ö?");
+		System.out.print("íŒŒì¼ ì´ë¦„, ì‚¬ìš©ì ì´ë¦„, ì‚¬ìš©ì ìˆ˜, í•­ëª© ìˆ˜?");
 		String str = new Scanner(System.in).nextLine();
 
 		StringTokenizer st = new StringTokenizer(str);
