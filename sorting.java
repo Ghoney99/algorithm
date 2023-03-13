@@ -10,9 +10,9 @@ public class HW1 {
 		int wordNum = 0;
 		long startTime, endTime;
 
-		String filePlace = "D:\\ÁöÇå °úÁ¦\\3-1\\¾Ë°í¸®Áò\\°úÁ¦1\\";
+		String filePlace = "D:\\ì§€í—Œ ê³¼ì œ\\3-1\\ì•Œê³ ë¦¬ì¦˜\\ê³¼ì œ1\\";
 
-		System.out.println("ÀÔ·Â ÆÄÀÏ ÀÌ¸§?");
+		System.out.println("ì…ë ¥ íŒŒì¼ ì´ë¦„?");
 		String fileName = new Scanner(System.in).nextLine();
 
 		try {
@@ -24,7 +24,7 @@ public class HW1 {
 			}
 
 		} catch (FileNotFoundException e) {
-			System.err.println("ÆÄÀÏ¾øÀ½");
+			System.err.println("íŒŒì¼ì—†ìŒ");
 		}
 
 		String a[] = new String[wordNum];
@@ -38,45 +38,45 @@ public class HW1 {
 				i++;
 			}
 		} catch (FileNotFoundException e) {
-			System.err.println("ÆÄÀÏ¾øÀ½");
+			System.err.println("íŒŒì¼ì—†ìŒ");
 		}
 
 		String b[] = a.clone();
-		System.out.println("1. ´Ü¾îÀÇ ¼ö = " + wordNum);
+		System.out.println("1. ë‹¨ì–´ì˜ ìˆ˜ = " + wordNum);
 
 		startTime = System.currentTimeMillis();
 		Selection.sort(b);
 		endTime = System.currentTimeMillis();
-		System.out.print((2) + ". " + "¼±ÅÃÁ¤·Ä");
-		System.out.println(": Á¤·Ä ¿©ºÎ = " + AbstractSort.isSorted(b) + ", ¼Ò¿ä½Ã°£ = " + (endTime - startTime) + "ms");
+		System.out.print((2) + ". " + "ì„ íƒì •ë ¬");
+		System.out.println(": ì •ë ¬ ì—¬ë¶€ = " + AbstractSort.isSorted(b) + ", ì†Œìš”ì‹œê°„ = " + (endTime - startTime) + "ms");
 		b = a.clone();
 
 		startTime = System.currentTimeMillis();
 		Insertion.sort(b);
 		endTime = System.currentTimeMillis();
-		System.out.print((3) + ". " + "»ğÀÔÁ¤·Ä");
-		System.out.println(": Á¤·Ä ¿©ºÎ = " + AbstractSort.isSorted(b) + ", ¼Ò¿ä½Ã°£ = " + (endTime - startTime) + "ms");
+		System.out.print((3) + ". " + "ì‚½ì…ì •ë ¬");
+		System.out.println(": ì •ë ¬ ì—¬ë¶€ = " + AbstractSort.isSorted(b) + ", ì†Œìš”ì‹œê°„ = " + (endTime - startTime) + "ms");
 		b = a.clone();
 
 		startTime = System.currentTimeMillis();
 		Shell.sort(b);
 		endTime = System.currentTimeMillis();
-		System.out.print((4) + ". " + "ShellÁ¤·Ä");
-		System.out.println(": Á¤·Ä ¿©ºÎ = " + AbstractSort.isSorted(b) + ", ¼Ò¿ä½Ã°£ = " + (endTime - startTime) + "ms");
+		System.out.print((4) + ". " + "Shellì •ë ¬");
+		System.out.println(": ì •ë ¬ ì—¬ë¶€ = " + AbstractSort.isSorted(b) + ", ì†Œìš”ì‹œê°„ = " + (endTime - startTime) + "ms");
 		b = a.clone();
 
 		startTime = System.currentTimeMillis();
 		MergeTD.sort(b);
 		endTime = System.currentTimeMillis();
-		System.out.print((5) + ". " + "Top Down ÇÕº´Á¤·Ä");
-		System.out.println(": Á¤·Ä ¿©ºÎ = " + AbstractSort.isSorted(b) + ", ¼Ò¿ä½Ã°£ = " + (endTime - startTime) + "ms");
+		System.out.print((5) + ". " + "Top Down í•©ë³‘ì •ë ¬");
+		System.out.println(": ì •ë ¬ ì—¬ë¶€ = " + AbstractSort.isSorted(b) + ", ì†Œìš”ì‹œê°„ = " + (endTime - startTime) + "ms");
 		b = a.clone();
 
 		startTime = System.currentTimeMillis();
 		MergeBU.sort(b);
 		endTime = System.currentTimeMillis();
-		System.out.print((6) + ". " + "Bottom Up ÇÕº´Á¤·Ä");
-		System.out.println(": Á¤·Ä ¿©ºÎ = " + AbstractSort.isSorted(b) + ", ¼Ò¿ä½Ã°£ = " + (endTime - startTime) + "ms");
+		System.out.print((6) + ". " + "Bottom Up í•©ë³‘ì •ë ¬");
+		System.out.println(": ì •ë ¬ ì—¬ë¶€ = " + AbstractSort.isSorted(b) + ", ì†Œìš”ì‹œê°„ = " + (endTime - startTime) + "ms");
 
 
 	}
